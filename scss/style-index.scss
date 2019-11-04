@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap'); // $fontsizeMob: 10px;
+$textcolor: #191970; //MidnightBlue
+$primary_main: #7e947d;
+$primary_side: #F5DEB3;
+$bgc_h3: #212e2f;
+$bgc_soc: #3d5e61;
+$bgc_info:#3d5e61;
+$myfont: 'Roboto Condensed',sans-serif;
+$myfont2: 'Roboto',sans-serif;
+$icon_width_1: 26px;
+$icon_width_2: 36px;
+$icon_width_3: 38px;
+$mob_width: 90vw;
+$mob_hight: auto;
+$mob_b_style: solid;
+$mob_b_width_main: medium;
+$mob_b_width_heading: thin;
+$mt: 10px;
+$mr: 10px;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary_main;
+}
+
+.container_img {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 6px;
+  // p {
+  //   Info om naast foto te zetten
+  //   order: 1;
+  //   text-align: justify;
+  //   font-family: $myfont2;
+  // }
+}
+//Picture:
+.profile_img {
+  width: 120px;
+  border-radius: 50%;
+  
+ 
+}
+// Headings
+
+// h1 = naam:
+h1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: $myfont;
+  font-size: 28px;
+  font-weight: 800;
+  text-shadow: 1px 2px 2px #1C6EA4;
+  letter-spacing: 3px;
+  margin-top: $mt;
+}
+
+// h2 = class shimmer junior web dev:
+h2 {
+  font-family: $myfont2;
+  font-size: 20px;
+  text-align: right;
+  margin-top: $mt;
+  margin-right: 24px;
+  
+}
+
+// h3 zijn hoofdtitels:
+h3 {
+  width: $mob_width;
+  
+  margin: auto;
+ 
+  // margin-bottom: 8px;
+  font-family: $myfont;
+  background-color: $bgc_h3;
+  color: #F8F9F9 ;
+  font-size: 20px;
+  align-items: center;
+  // padding-top: 6px;
+  padding-bottom: 6px;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+   // border-style: solid;
+  // border-width: thin;
+}
+
+//h4 = gsm en emailadres:
+h4 {
+  // background-color: #293e40;
+  background-color: $bgc_soc;
+  // width: $mob_width;
+  font-family: $myfont;
+  font-size: 16px;
+  margin: auto;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  height: auto;
+  // border-style: solid;
+  // border-width: thin;
+  // justify-content: center;
+  // text-align: center;  
+}
+
+//h5 proof titels diploma certificaten:
+h5 {
+  background-color: #a1aba1;
+  margin: auto;
+  font-family: $myfont;
+  font-size: 15px;
+  padding: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  height: auto;
+  // border-style: solid;
+  // border-width: thin;
+
+  // justify-content: center;
+  // text-align: center;
+}
+
+//h6 nog niet gebruikt:
+h6 {
+  margin: auto;
+  font-family: $myfont;
+  font-size: 14px;
+  padding: 8px;
+}
+
+// programming Icon sizes:
+.i_size_1 {
+  width: $icon_width_1;
+}
+.i_size_2 {
+  width: $icon_width_2;
+}
+.i_size_3 {
+  width: $icon_width_3;
+}
+.size_soc_icon {
+  width: $icon_width_1;
+}
+
+//wrapper (everything)
+
+//head wrapper has section with name jobtitle and img:
+.head-wrapper {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  width: $mob_width;
+  height: $mob_hight;
+  background-color: #859c84; 
+  // border-style: $mob_b_style;
+  // border-width: $mob_b_width_main; 
+}
+
+
+.wrapper2 {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: $mob_width;
+}
+
+//box with contactdetails and social media
+.flex-container2 {
+  margin: auto;
+  text-align: center;
+    display: block;
+  width: $mob_width;
+ }
+button{
+  background-color: $primary_main;
+  width: $mob_width;
+  border: none;
+//   //padding is very important: 2 values: top/bottom, right/left:
+  padding: 10px 0px;  
+ 
+}
+
+.contact {
+  margin: auto;
+  display: block;
+  width: $mob_width;
+  height: $mob_hight;
+  // border-style: $mob_b_style;
+  // border-width: $mob_b_width_heading;
+}
+
+div#contactId{
+  display: none;
+}
+
+div#socialId{
+  display: none;
+}
+
+
+
+.con_det_title {
+  
+    // see h3
+}
+
+.con_i{
+  // margin: auto;
+  padding-top: 6px ;
+  padding-bottom: 6px;
+  background-color: #47767a;
+}
+
+// @media only screen and (min-width: 768px) {
+//   .con_i{
+//     background-color: #f2f2aa;
+//   }
+// }
+
+.social_media_title {
+  // see h3
+}
+
+.soc_icon{
+
+  display: inline-flex;
+  padding-top: 6px ;
+  padding-bottom: 6px;
+  margin: 6px;
+  
+}
+
+  
+// .size_soc_icon{
+//   margin: 4px 2px;
+//   transition: 0.3s; 
+//   opacity: 1;
+ 
+// }
+// .size_soc_icon:hover{
+//   opacity: 0.5;
+//   pointer-events: auto;
+
+
+// }
+
+
+.size_soc_icon {
+ 
+  padding: 10px;
+  // background-color: green;
+  transition: transform .2s;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.size_soc_icon:hover {
+  opacity: 0.5;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.s_i{
+  margin: auto;
+  background-color: #47767a; 
+}
+
+
+
+.left-container {
+  align-items: center;
+  // display: block;
+  margin: auto; //margin auto keeps straight lines at both sides as under the first container:
+  // text-align: center;
+  // background-color: ;
+  width: $mob_width;
+  height: $mob_hight;
+  // border-style: $mob_b_style;
+  // border-width: $mob_b_width_main;
+  background-color:#859c84;
+}
+
+.prog_lang_title {
+  // See h3
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.icon-skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  div{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+}
+
+// Vaardigheden
+.vdh_title{
+  //h3
+}
+.vdh_info {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+}
+
+.lang_title {
+  //h3
+}
+
+.lang_info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+   margin-bottom: 8px;
+}
+span.language{
+font-family: $myfont2;
+font-size:  14px;
+ padding-left: 50px;
+display: inline-block;
+width: 74px;
+}
+
+// Selects every <a> element whose href attribute value begins with "https":
+// [class^=pb] 
+
+progress {
+  width: 104px;
+  height: 6px;
+  border: 1px solid grey;
+  border-radius: 15px 50px 30px; 
+  margin-left: 6px;
+  
+}
+
+
+
+.eigenschap_title {
+  //h3
+}
+
+.eigenschap_info {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  font-family: $myfont2;
+  text-align: center;
+  font-size: 14px;
+}
+
+.personalia_title {
+  //h3
+}
+
+.person_info {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+}
+
+.main-container {
+  background-color: #7E947D;
+  margin: auto;
+  display: flex;
+  // background-color: #f6e0b5 ;
+  display: block;
+  width: $mob_width;
+  height: $mob_hight;
+//   border-style: $mob_b_style;
+//   border-width: $mob_b_width_main;
+}
+
+
+.work_title {
+  background-color: $bgc_info;
+  //h4
+}
+// @media only screen and (min-width: 768px) {
+//   .work_title{
+//     background-color: #2f473e;
+//     }
+// }
+
+
+
+
+
+.work_info {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+
+}
+
+.school {
+  //h3
+}
+//proof has h5
+.proof {
+  background-color:#556355;
+  color: #F8F9F9;
+  margin: auto;
+  font-family: $myfont;
+  font-size: 16px;
+  padding: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  height: auto;
+  // border-style: solid;
+  // border-width: thin;
+}
+
+
+
+// same as main container 
+.school_info {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+  background-color:#7E947D;
+}
+

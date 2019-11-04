@@ -1,0 +1,77 @@
+
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+}
+
+
+
+   .aside {
+     height: 100%;
+     max-width: 30%;
+     order: -1;
+     flex: 3 auto;
+ background-color: #F5DEB3 ;
+   }
+
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  // img {
+  //   width: 120px;
+  //   border-radius: 50%;
+  //   }
+
+}
+
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars
+   */
+  .main { flex: 2 0px; }
+  .aside { order: 1; }
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+
+h1{
+//font-family: 'Kotta One', serif;
+// font-family: 'Coda', cursive;
+//font-family: 'Coda Caption', sans-serif;
+// font-family: 'Cookie', cursive;
+// font-family: 'Damion', cursive;
+//font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+ font-size: 60px;
+font-weight: 800;
+text-shadow: 1px 2px 2px #1C6EA4;
+}
+
+body{
+  background-color: #8FBC84;
+}
+
+
+
+// #pct {
+//         overflow: hidden;
+//         width: 30%;
+img {
+  width: 120px;
+  border-radius: 50%;
+  }
+
+  // #aisde{
+  //   background-color: #F5DEB3 ;
+  // }

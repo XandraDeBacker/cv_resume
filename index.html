@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- standaard -->
+  <meta charset="utf-8">
+
+  <!-- toegevoegd: -->
+  <!-- ? -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The IE-edge tells Internet Explorer to use the highest mode available to that version of IE.
+     Internet Explorer 8 can support up to IE8 modes, IE9 can support IE9 modes and so on:
+    See https://www.lifewire.com/xua-compatible-meta-tag-3469059 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style-index.css">
+  <link rel="stylesheet" href="css/shimmer.css">
+  <link rel="stylesheet" href="css/progres-bars.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+  <script src="https://kit.fontawesome.com/468f2c3127.js"></script>
+
+  <!-- Toggle between hiding and showing the paragraphs: -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   -->
+
+  <!-- <link rel="icon" href="favicons/fav.png"> -->
+  <!-- Van de google fonts site. Deze in head html en met combinatie van andere link ervan in css (zie css)link:
+    https://fonts.google.com/?hl=nl&selection.family=Coda|Coda+Caption:800|Cookie|Damion|Kotta+One -->
+  <!-- Shimmer effect: -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
+
+  <title>cv Xandra De Backer</title>
+
+</head>
+
+<body>
+  <!-- div "wrapper" is tot aan het einde: -->
+  <div class="wrapper">
+
+    <!-- rotate left en wright staat klaat voor later  -->
+    <!-- <div class="rotateLeft"></div>
+    <div class="rotateRight"></div> -->
+
+    <div class="container_head">
+      <div class="head-wrapper">
+        <!-- <div class="flex-container1"> -->
+        <section id="intro">
+          <!-- class shimmer toegevoegd voor de extra shimmer file met special effects: -->
+          <div class="wrapper2">
+            <h1 class="shimmer">Xandra De Backer</h1>
+            <h2 class="shimmer">Junior Web Developer</h2>
+          </div>
+          <div class="container_img" id="pct">
+
+            <img src="cv_picture/cvpic.jpg" class="profile_img" alt="profile picture">
+          </div>
+        </section>
+        <!-- </div> -->
+      </div>
+    </div>
+
+ <!-- <section id="left"> -->
+    <section id="left">
+        <div class="left-container">
+   
+
+    <!-- <section> -->
+      <div class="flex-container2">
+        <!-- enkel geldig bij divs maar niet hun inhoud -->
+
+        <div class="contact">
+        
+          <button onclick="myFunction1()">
+            <h3 class="con_det_title">Contact details</h3>
+          </button>
+        <!-- script for button -->
+
+          <script>
+            function myFunction1() {
+              var x = document.getElementById("contactId");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+          <div id="contactId">
+            <h4>gsm:</h4>
+            <p class="con_i">(+32) 479 01 05 70</p>
+            <h4>e-mailadres:</h4>
+            <p class="con_i">xandradebacker@gmail.com</p>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="flex-container"> -->
+        <div class="social">
+          <button onclick="myFunction2()">
+          <h3 class="social_media_title">Social media</h3></button>
+          <script>
+            function myFunction2() {
+              var x = document.getElementById("socialId");
+              if (x.style.display != "block") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+          <div id="socialId">
+            <ul class="s_i">
+              <!-- Opening on a new page due to target and without opener browsing context-->
+              <li class="soc_icon"><a href="https://www.linkedin.com/in/xandra-de-backer-proceed" target="_blank"
+                  rel="noopener"><img src="icons_soc/linkedin-icon-2.svg" alt="LinkedIn_link" class="size_soc_icon"></a>
+              </li>
+              <li class="soc_icon"><a href="https://github.com/XandraDeBacker" target="_blank" rel="noopener"><img
+                    src="icons_soc/github-icon-1.svg" alt="GitHub_link" class="size_soc_icon"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- </section> -->
+    <!-- </div>  -->
+    <!-- </div> -->
+
+
+   
+
+
+
+    <!-- <section id="left">
+      <div class="left-container"> -->
+        <div class="programming_lang">
+          <h3 class="prog_lang_title">Programmeertalen</h3>
+          <ul class="icon-skill">
+            <div>
+              <li><img src="icons_prog/html-5.svg" class="html5-icon i_size_1"></li>
+              <li> <img src="icons_prog/sass-1.svg" class="sass-icon i_size_2"></li>
+              <li><img src="icons_prog/css-3.svg" class="css3-icon i_size_1"></li>
+            </div>
+            <div>
+              <li><img src="icons_prog/javascript-1.svg" class="js-icon i_size_1"></li>
+              <li><img src="icons_prog/php-1.svg" class="php-icon i_size_3"></li>
+              <li><img src="icons_prog/bootstrap-4.svg" class="b-icon i_size_1"></li>
+            </div>
+          </ul>
+        </div>
+        <h3 class="vdh_title">Vaardigheden</h3>
+        <p class="vdh_info">Microsoft Office pakket | Administratie |
+          <br>GitHub | Navision | Orafin | Sysaid | Vlimpers
+        </p>
+        <h3 class="lang_title">Talenkennis</h3>
+        <ul class="lang_info">
+          <li class="lang">
+            <span class="language">Nederlands</span>
+            <progress max="100" value="90"></progress>
+          </li>
+
+          <li class="lang">
+            <span class="language">Engels</span>
+            <progress max="100" value="85"></progress>
+          </li>
+          <li class="lang">
+            <span class="language">Duits</span>
+            <progress max="100" value="70"></progress>
+          </li>
+          <li class="lang">
+            <span class="language">Frans</span>
+            <progress max="100" value="25"></progress>
+          </li>
+        </ul>
+
+        <h3 class="eigenschap_title">Eigenschappen</h3>
+        <p class="eigenschap_info">Flexibel | leergierig | ondernemend |
+          <br>hulpvaardig | verantwoordelijk
+        </p>
+        <h3 class="personalia_title">Personalia</h3>
+        <p class="person_info">Woonplaats : 3700 Tongeren<br>
+          Geboren te Diest op 14/05/1969<br>
+          Rijbewijs: B
+        </p>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="main-container">
+
+        <h3 class="work">Werkervaring</h3>
+
+        <h4 class="work_title">Helpdeskmedewerker</h4>
+        <h5>Lampiris Sint-Truiden <br> 11-2018 - 03-2019</h5>
+        <p class="work_info">Inbound facturatie: informeren, analyseren, wijzigingen
+          toepassen, afbetalingsplannen opstellen/ toekennen
+        </p>
+
+        <h4 class="work_title">Camoinghost</h4>
+        <h5>European Leisure Group - Vacansoleil <br> 05-2018 - 10-2018</h5>
+        <p class="work_info">In- en uitcheck gasten; administratie; communicatie
+          oplossingsgericht beheer</p>
+
+        <h4 class="work_title">Vervangend Administratief bediende helpdesk facturatie</h4>
+        <h5>Vlaamse Overheid Dep. Financiën & Begroting<br>12-2016 - 07-2017</h5>
+        <p class="work_info">Verificatie / aanpassing / opvolging facturatie
+          ICT-Ondersteuning collega's: boekhoudsysteem Orafin
+          Excel- rapporten, wisselkoers updaten
+          Identiteitscontrole en aanvragingen verblijfsvergunningen
+          Controle en rapportering ondernemingsnummers</p>
+
+        <h4 class="work_title">Tijdelijke admin en helpdesk opdrachten</h4>
+        <h5>Nike Laakdal / CM Tongeren / IPG Hasselt / Ikanbi Herstal | 2008 - 2016</h5>
+        <p class="work_info">Ontvangst/verzending bestellingen<br>
+          Digitale verwerking tussenkomsten<br>
+          Technische helpdesk , marktonderzoek
+        </p>
+        <h4 class="work_title">Buitenlandse opdrachten | 1994 - 2008</h4>
+        <h5>IBM Zuid-Afrika</h5>
+        <p class="work_info">B2B IT-helpdesk ABN AMRO NL</p>
+        <h5>Ambassade van België Tanzania</h5>
+        <p class="work_info">Administratief medewerker</p>
+        <h5>CaribJet luchtvaartmaatschappij</h5>
+        <p class="work_info">Chef kabinepersoneel DC10 / Airbus 310 / LD11
+          Internationale korte -en lange afstandsvluchten</p>
+
+        <h3 class="school">Opleiding</h3>
+        <p class="school_info"> Junior Web developer<br>BeCode Genk | 05-2019 - heden</p>
+        <h5 class="proof">Diploma</h5>
+        <p class="school_info">ASO Administratie><br>CVO De Oranjerie Diest | 2013 -2015</p>
+        <h5 class="proof">Certificaten</h5>
+        <p class="school_info">E-learning IT en communicatievaardigheden<br>IBM Zuid-Afrika | 2005 - 2008</p>
+        <p class="school_info">Creative Ministry Major<br>RBTC Zuid- Afrika | 2001 - 2002</p>
+        <p class="school_info">Initial Safety Training Cabin Attendant<br>IFFAC Stroombeek-Bever | 1994</p>
+        <p class="school_info">BSO Voeding - Horeca<br>Hotelschool Hasselt | 1983 - 1987</p>
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+      <!-- <footer class="footer">Footer</footer> -->
+
+
+      <!-- de sluitingsdiv van helemaal bovenaan "wrapper": -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Icons from WorldVectorLogo -->
+  <!-- fontawesome key kit altijd toevoegen bij gebruik van (favicon) icons. Mag steeds dezelfde key kit link zijn. -->
+  <!-- More than one class: next to each other with a space and without "": -->
+
+</body>
+
+</html>
