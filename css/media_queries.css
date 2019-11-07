@@ -1,141 +1,17 @@
-@media only screen and (min-width: 375px) {
-  .container_img {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -20px;
-    margin-left: 18px;
-  }
+/* Error: expected "}".
+ *     ,
+ * 174 | }
+ *     |  ^
+ *     '
+ *   scss/media_queries.scss 174:2  root stylesheet */
 
-  h1 {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 18px;
-  }
-
-  h2 {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 18px;
-  }
-
-  .language {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    padding-top: 6px;
-    padding-left: 60px;
-    display: inline-block;
-    width: 74px;
-  }
-
-  .progress {
-    width: 130px;
-    height: 6px;
-    border: 1px solid grey;
-    border-radius: 15px 50px 20px;
-    margin-left: 12px;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a     \2577 \a 174 \2502  }\a     \2502   ^\a     \2575 \a   scss/media_queries.scss 174:2  root stylesheet';
 }
-@media only screen and (min-width: 425px) {
-  .container_img {
-    margin-top: -24px;
-    margin-left: 40px;
-  }
-
-  h1 {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 36px;
-  }
-
-  h2 {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 38px;
-  }
-
-  span.language {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    padding-top: 6px;
-    padding-left: 68px;
-    display: inline-block;
-    width: 74px;
-  }
-
-  progress {
-    width: 150px;
-    height: 6px;
-    border: 1px solid grey;
-    border-radius: 15px 50px 20px;
-    margin-left: 14px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .s_i {
-    background-color: #f2f2aa;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .wrapper2 {
-    text-align: right;
-  }
-
-  .con_i {
-    background-color: #f2f2aa;
-  }
-
-  .s_i {
-    background-color: #f2f2aa;
-  }
-
-  .work_title {
-    background-color: #2f473e;
-  }
-
-  .main-container {
-    float: right;
-    width: 50%;
-    justify-content: space-evenly;
-    padding-right: 30px;
-  }
-
-  .left-container {
-    float: left;
-    width: 42%;
-    padding-left: 40px;
-    align-items: center;
-    display: block;
-    margin: auto;
-    height: auto;
-    background-color: #859c84;
-  }
-
-  h3 {
-    width: 100%;
-  }
-
-  .con_det_title {
-    width: 42%;
-    float: left;
-  }
-
-  div#contactId {
-    display: block;
-    width: 42%;
-    float: left;
-  }
-
-  .social_media_title {
-    display: block;
-    width: 47%;
-    float: left;
-  }
-
-  div#socialId {
-    display: block;
-    width: 42%;
-    float: left;
-  }
-}
-
-/*# sourceMappingURL=media_queries.css.map */

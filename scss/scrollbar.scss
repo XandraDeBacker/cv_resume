@@ -1,0 +1,41 @@
+$mob_width: 96vw;
+$primary_main: #7e947d;
+// html {
+//     background: lightgrey;
+//     height: 100%;
+//     overflow: hidden;
+//   }
+
+html {
+    background:$primary_main;
+    height: 100%;
+    // overflow: hidden;
+  }
+  body {
+    height: 100%;
+    background: whitesmoke;
+    overflow: scroll;
+  //  width: 100%;
+  
+    // max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    // font: 94%/1.4 serif;
+    border: 1px solid rgba(0,0,0,0.25)
+  }
+  p {
+    margin: 0 0 1.5em;
+  }
+  
+  body::-webkit-scrollbar {
+      width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 0.5px solid slategrey;
+  }

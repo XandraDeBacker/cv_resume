@@ -1,5 +1,5 @@
 $primary_main: #7e947d;
-$mob_width: 90vw;
+$mob_width: 96vw;
 $mob_hight: auto;
 $myfont2: 'Roboto',sans-serif;
 $mob_b_width_main:medium;
@@ -64,7 +64,7 @@ $mob_b_style: solid;
         font-size:  16px;
         padding-top: 6px;
         padding-left: 68px;
-        display: inline-block;
+        // display: inline-block;
         width: 74px;
         }
         progress {
@@ -80,12 +80,22 @@ $mob_b_style: solid;
     .s_i{
         background-color: #f2f2aa;
     }
+    .lang_info{
+    display: flex;
+    align-items: center;
+    }
+
+    
 }
 
 
   
 
 @media only screen and (min-width: 1024px) {
+
+    .container_head{
+       transform: rotate(20deg);
+    } 
 
     .wrapper2{
         text-align: right; 
@@ -97,23 +107,28 @@ $mob_b_style: solid;
         background-color: #f2f2aa;
         
     }
+
+
+   
+
+     .main-container{
+        // float: right;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        width:50% ;
+        justify-content: space-evenly;
+        padding-right: 30px;
+    }
+
     .work_title{
         background-color: #2f473e;
      }
 
-     .main-container{
-        float: right;
-        width:50% ;
-        justify-content: space-evenly;
-        padding-right: 30px;
-       
-
-    }
-
-
+//FLOAT LEFT RIGHT NOOIT GEBRUIKEN. ENKEL FLEXBOX
 
      .left-container {
-         float: left;
+        //  float: left;
          width: 42%;
          padding-left: 40px;
         align-items: center;
@@ -125,72 +140,37 @@ $mob_b_style: solid;
         background-color:#859c84;
       }
 
-    //   .flex-container2 {
-    //       float: left;
-    //     margin: auto;
-    //     height:$mob_hight; 
-    //     text-align: center;
-    //       display: block;
-    //     width: 44%;
-    //    }
-     
-
-     
-   
 
       h3{
-          width: 100%
-      
+          width: 100%;
+       
       }
 
-      
-
-      .con_det_title {
-        width: 42%;
-        float: left;
-      }
-      
-    //     margin: auto;
-    //       // see h3
+      .left_title {
+        width: 100%;
+    //     float: left;
     //   }
+      .contact {
+          width: 40%;
+      }
 
       div#contactId{
         display: block;
-        width: 42%;
-        float: left;
-      }
-      .social_media_title {
-        display: block;
-        width: 47%;
-        float: left;
-      }
+        width: 40%;
+    //     float: left;
+    //   }
+      
 
       div#socialId{
         display: block;
-        width: 42%;
-        float: left;
-      }
-
-
-    //   .flex-container2 {
-    //     // margin: auto;
-    //     text-align: center;
-    //     //   display: inline-block;
-    //     width: 48%;
+        width: 40%;
     //     float: left;
-    //    }
-
-// .contact {
-//   margin: auto;
-//   display: block;
-//   width: 48%;
-//   float: left;
+    //   }
 
 
- 
-//   // border-style: $mob_b_style;
-//   // border-width: $mob_b_width_heading;
-// }
+    
+
+
 }
 
       

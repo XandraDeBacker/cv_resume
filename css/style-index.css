@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap");
 body {
   height: 100vh;
-  width: 100vw;
   background-color: #7e947d;
 }
 
@@ -37,17 +36,20 @@ h2 {
 }
 
 h3 {
-  width: 90vw;
   margin: auto;
+  margin-bottom: 12px;
+  margin-top: 12px;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #212e2f;
   color: #F8F9F9;
   font-size: 20px;
   align-items: center;
+  padding-top: 6px;
   padding-bottom: 6px;
   height: auto;
   justify-content: center;
   text-align: center;
+  border-radius: 4px;
 }
 
 h4 {
@@ -100,7 +102,6 @@ h6 {
   justify-content: center;
   margin: auto;
   display: flex;
-  width: 90vw;
   height: auto;
   background-color: #859c84;
 }
@@ -109,28 +110,12 @@ h6 {
   display: block;
   text-align: center;
   margin: auto;
-  width: 90vw;
 }
 
 .flex-container2 {
   margin: auto;
   text-align: center;
   display: block;
-  width: 90vw;
-}
-
-button {
-  background-color: #7e947d;
-  width: 90vw;
-  border: none;
-  padding: 10px 0px;
-}
-
-.contact {
-  margin: auto;
-  display: block;
-  width: 90vw;
-  height: auto;
 }
 
 div#contactId {
@@ -141,8 +126,33 @@ div#socialId {
   display: none;
 }
 
+.left_title_click {
+  margin: auto;
+}
+
+button {
+  outline: none;
+  background: none;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #212e2f;
+  color: #F8F9F9;
+  font-size: 20px;
+  align-items: center;
+  padding: 0;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.left_title_click:hover {
+  background-color: grey;
+}
+
 .con_i {
-  padding-top: 6px;
   padding-bottom: 6px;
   background-color: #47767a;
 }
@@ -151,11 +161,10 @@ div#socialId {
   display: inline-flex;
   padding-top: 6px;
   padding-bottom: 6px;
-  margin: 6px;
 }
 
 .size_soc_icon {
-  padding: 10px;
+  padding: 20px;
   transition: transform 0.2s;
   width: 28px;
   height: 28px;
@@ -179,14 +188,10 @@ div#socialId {
 .left-container {
   align-items: center;
   margin: auto;
-  width: 90vw;
   height: auto;
+  border-style: solid;
+  border-width: medium;
   background-color: #859c84;
-}
-
-.prog_lang_title {
-  margin-bottom: 12px;
-  margin-top: 12px;
 }
 
 .icon-skill {
@@ -255,7 +260,6 @@ progress {
   margin: auto;
   display: flex;
   display: block;
-  width: 90vw;
   height: auto;
 }
 
