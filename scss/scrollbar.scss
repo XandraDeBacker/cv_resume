@@ -1,5 +1,5 @@
 $mob_width: 96vw;
-$primary_main: #7e947d;
+$primary_main: #526170;
 // html {
 //     background: lightgrey;
 //     height: 100%;
@@ -15,10 +15,7 @@ html {
     height: 100%;
     background: whitesmoke;
     overflow: scroll;
-  //  width: 100%;
-  
-    // max-width: 600px;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 1em;
     // font: 94%/1.4 serif;
     border: 1px solid rgba(0,0,0,0.25)
@@ -32,7 +29,8 @@ html {
   }
    
   body::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
   }
    
   body::-webkit-scrollbar-thumb {

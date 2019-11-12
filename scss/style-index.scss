@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap'); // $fontsizeMob: 10px;
+// @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap'); // $fontsizeMob: 10px;
 $textcolor: #191970; //MidnightBlue
-$primary_main: #7e947d;
+// $primary_main: #7e947d;
+$primary_main:#526170;
 $primary_side: #F5DEB3;
-$bgc_h3: #212e2f;
+$bgc_h3: #0f1b36;
 $bgc_soc: #3d5e61;
 $bgc_info:#3d5e61;
 $myfont: 'Roboto Condensed',sans-serif;
 $myfont2: 'Roboto',sans-serif;
+$myfont3: 'Coda', cursive;
+$myfont4: 'Coda Caption', sans-serif;
+
 $icon_width_1: 26px;
 $icon_width_2: 36px;
 $icon_width_3: 38px;
@@ -17,12 +21,13 @@ $mob_b_width_main: medium;
 $mob_b_width_heading: thin;
 $mt: 10px;
 $mr: 10px;
+$mb: 6px;
 
 body {
   height: 100vh;
   //width: 100vw;
   background-color: $primary_main;
- 
+  // background-color: #526170;
 }
 
 .container_img {
@@ -50,8 +55,8 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: center;
-  font-family: $myfont;
-  font-size: 28px;
+  font-family: $myfont4;
+  font-size: 22px;
   font-weight: 800;
   text-shadow: 1px 2px 2px #1C6EA4;
   letter-spacing: 3px;
@@ -64,6 +69,7 @@ h2 {
   font-size: 20px;
   text-align: right;
   margin-top: $mt;
+  margin-bottom: $mb;
   margin-right: 24px;
   
 }
@@ -93,6 +99,7 @@ h3 {
 h4 {
   // background-color: #293e40;
   background-color: $bgc_soc;
+  // background-color: #2d4b63;
   // width: $mob_width;
   font-family: $myfont;
   font-size: 16px;
@@ -147,7 +154,9 @@ h6 {
   width: $icon_width_1;
 }
 
-//wrapper (everything)
+.wrapper{
+  background-color:#526170;
+}
 
 //head wrapper has section with name jobtitle and img:
 .head-wrapper {
@@ -157,7 +166,10 @@ h6 {
   display: flex;
   // width: $mob_width;
   height: $mob_hight;
-  background-color: #859c84; 
+  // background-color: #859c84; 
+  // background-color: #526170;
+  // background-color: #697685;
+  background-color: #62798c 
   // border-style: $mob_b_style;
   // border-width: $mob_b_width_main; 
 }
@@ -168,10 +180,15 @@ h6 {
   text-align: center;
   margin: auto;
   // width: $mob_width;
+
+}
+
+.l_r_wrap{
+  background-color: #7E947D; 
 }
 
 //box with contactdetails and social media
-.flex-container2 {
+.flex-container_soc_contact {
   margin: auto;
   text-align: center;
     display: block;
@@ -199,6 +216,7 @@ h6 {
 
 div#contactId{
   display: none;
+  width:99%;
 }
 
 div#socialId{
@@ -209,12 +227,16 @@ div#socialId{
 // }
 //  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 .left_title_click{
-  // width: 100%;
   margin: auto;
+ 
+  border-radius: 15px 50px 0px 0px;
+  
+  height: 24px;
   // margin-bottom: 12px;
+   // width: 100%;
   // margin-top: 12px;
   // font-family: $myfont;
-  // background-color: $bgc_h3;
+  background-color: $bgc_h3;
   // color: #F8F9F9 ;
   // font-size: 20px;
   // align-items: center;
@@ -223,7 +245,7 @@ div#socialId{
   // height: auto;
   // justify-content: center;
   // text-align: center;
-  // padding: 0%;
+  padding: 0%;
   // border-radius: 4px;
 
 }
@@ -235,8 +257,8 @@ div#socialId{
   text-decoration: none;
   width: 100%;
   margin: auto;
-  // margin-bottom: 12px;
-  // margin-top: 12px;
+  margin-bottom: 2px;
+  margin-top: 10px;
   font-family: $myfont;
   background-color: $bgc_h3;
   color: #F8F9F9 ;
@@ -244,14 +266,14 @@ div#socialId{
   align-items: center;
   padding: 0;
   //padding-bottom: 6px;
-  height: auto;
+  height: 24px;
   justify-content: center;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 15px 20px 0px 0px;
 
 
   // background-color: $primary_main;
-  // width: 100%;
+ 
 
   
   // -webkit-appearance: none;
@@ -266,18 +288,14 @@ div#socialId{
 // button:hover{
 //   background-color: grey;
 // }
-.left_title_click:hover{
-  background-color: grey;
+.button:hover{
+  background-color:#18274a;
 }
-
-
-
 
 //contact icons:
 .con_i{
   // margin: auto;
-  // padding-top: 6px ;
-  padding-bottom: 6px;
+  margin-bottom: 1px;
   background-color: #47767a;
 }
 
@@ -294,9 +312,10 @@ div#socialId{
 .soc_icon{
 
   display: inline-flex;
-  padding-top: 6px ;
-  padding-bottom: 6px;
-  // margin: 6px;
+  // padding-top: 6px ;
+  // padding-bottom: 6px;
+  // padding: 8px;
+  margin: 6px;
   
 }
 
@@ -314,14 +333,18 @@ div#socialId{
 
 // }
 
-
+//icoontjes social:
 .size_soc_icon {
  
-  padding: 20px;
+  align-content: center;
   // background-color: green;
   transition: transform .2s;
-  width: 28px;
+  // width: 32px;
+  // height: 32px;
+
+    width: 28px;
   height: 28px;
+
   margin: 0 auto;
 }
 
@@ -334,7 +357,10 @@ div#socialId{
 
 .s_i{
   margin: auto;
-  background-color: #47767a; 
+  background-color: #47767a;
+  
+  
+  
 }
 
 
@@ -347,9 +373,11 @@ div#socialId{
   // background-color: ;
   // width: $mob_width;
   height: $mob_hight;
-  border-style: $mob_b_style;
-  border-width: $mob_b_width_main;
-  background-color:#859c84;
+  // border-style: $mob_b_style;
+  // border-width: $mob_b_width_main;
+  // background-color:#859c84;
+  // background-color:#3d5e61;
+  background-color:#62798c 
 }
 
 // .prog_lang_title {
@@ -438,8 +466,15 @@ progress {
   font-size: 14px;
 }
 
+// .main{
+//   background-color: #62798c; 
+// }
+
 .main-container {
-  background-color: #7E947D;
+  // background-color: #7E947D;
+  // background-color: #62798c;
+
+  // background-color: #526170;
   margin: auto;
   display: flex;
   // background-color: #f6e0b5 ;
@@ -452,7 +487,10 @@ progress {
 
 
 .work_title {
-  background-color: $bgc_info;
+  // background-color: $bgc_info;
+  background-color: #2d4b63;
+  color: #F8F9F9;
+
   //h4
 }
 // @media only screen and (min-width: 768px) {
@@ -472,15 +510,27 @@ progress {
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
-
 }
+.work_info2 {
+  margin-top: $mt;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+  color:#F8F9F9; 
+}
+
+
+
 
 .school {
   //h3
 }
 //proof has h5
 .proof {
-  background-color:#556355;
+  // background-color:#556355;
+background-color:#2e4052;
   color: #F8F9F9;
   margin: auto;
   font-family: $myfont;
@@ -504,6 +554,8 @@ progress {
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
-  background-color:#7E947D;
+  // background-color:#7E947D;
+background-color: #526170;
+
 }
 
