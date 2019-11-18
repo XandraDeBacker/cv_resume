@@ -6,10 +6,14 @@ $primary_side: #F5DEB3;
 $bgc_h3: #0f1b36;
 $bgc_soc: #3d5e61;
 $bgc_info:#3d5e61;
-$myfont: 'Roboto Condensed',sans-serif;
-$myfont2: 'Roboto',sans-serif;
-$myfont3: 'Coda', cursive;
-$myfont4: 'Coda Caption', sans-serif;
+$myfont: 'Roboto Condensed',
+sans-serif;
+$myfont2: 'Roboto',
+sans-serif;
+$myfont3: 'Coda',
+cursive;
+$myfont4: 'Coda Caption',
+sans-serif;
 
 $icon_width_1: 26px;
 $icon_width_2: 36px;
@@ -24,16 +28,14 @@ $mr: 10px;
 $mb: 6px;
 
 body {
-  height: 100vh;
-  //width: 100vw;
+  // height: 100vh;
   background-color: $primary_main;
-  // background-color: #526170;
 }
 
 .container_img {
-   display: flex;
-   justify-content: center;
-   margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
   // p {
   //   Info om naast foto te zetten
   //   order: 1;
@@ -41,24 +43,24 @@ body {
   //   font-family: $myfont2;
   // }
 }
+
 //Picture:
 .profile_img {
   width: 120px;
   border-radius: 50%;
-  
- 
 }
-// Headings
 
+// Headings
 // h1 = naam:
 h1 {
   margin: auto;
   display: flex;
   justify-content: center;
   font-family: $myfont4;
-  font-size: 22px;
+  font-size: 21px;
+  font-size: 6vw;
   font-weight: 800;
-  text-shadow: 1px 2px 2px #1C6EA4;
+  text-shadow: 1px 2px 2px #735556;
   letter-spacing: 3px;
   margin-top: $mt;
 }
@@ -71,18 +73,15 @@ h2 {
   margin-top: $mt;
   margin-bottom: $mb;
   margin-right: 24px;
-  
 }
 
 // h3 zijn hoofdtitels:
 h3 {
-  // width: $mob_width;
-   margin: auto;
-  margin-bottom: 12px;
+  margin: auto;
   margin-top: 12px;
   font-family: $myfont;
   background-color: $bgc_h3;
-  color: #F8F9F9 ;
+  color: #F8F9F9;
   font-size: 20px;
   align-items: center;
   padding-top: 6px;
@@ -91,16 +90,11 @@ h3 {
   justify-content: center;
   text-align: center;
   border-radius: 4px;
-   // border-style: solid;
-  // border-width: thin;
 }
 
 //h4 = gsm en emailadres:
 h4 {
-  // background-color: #293e40;
-  background-color: $bgc_soc;
-  // background-color: #2d4b63;
-  // width: $mob_width;
+  background-color: #a1aba1;
   font-family: $myfont;
   font-size: 16px;
   margin: auto;
@@ -108,15 +102,11 @@ h4 {
   padding-left: 6px;
   padding-bottom: 6px;
   height: auto;
-  // border-style: solid;
-  // border-width: thin;
-  // justify-content: center;
-  // text-align: center;  
 }
 
 //h5 proof titels diploma certificaten:
 h5 {
-  background-color: #a1aba1;
+  background-color: #52687d;
   margin: auto;
   font-family: $myfont;
   font-size: 15px;
@@ -125,13 +115,7 @@ h5 {
   padding-bottom: 6px;
   padding-left: 6px;
   height: auto;
-  // border-style: solid;
-  // border-width: thin;
-
-  // justify-content: center;
-  // text-align: center;
 }
-
 //h6 nog niet gebruikt:
 h6 {
   margin: auto;
@@ -144,115 +128,63 @@ h6 {
 .i_size_1 {
   width: $icon_width_1;
 }
+
 .i_size_2 {
   width: $icon_width_2;
 }
+
 .i_size_3 {
   width: $icon_width_3;
 }
+
 .size_soc_icon {
   width: $icon_width_1;
 }
 
-.wrapper{
-  background-color:#526170;
+.wrapper {
+  background-color: #526170;
 }
 
 //head wrapper has section with name jobtitle and img:
 .head-wrapper {
   justify-content: center;
   margin: auto;
-  // padding-top: 30px;
   display: flex;
-  // width: $mob_width;
   height: $mob_hight;
-  // background-color: #859c84; 
-  // background-color: #526170;
-  // background-color: #697685;
-  background-color: #62798c 
-  // border-style: $mob_b_style;
-  // border-width: $mob_b_width_main; 
+  background-color: #62798c
 }
 
-
+//name and job title for shimmer
 .wrapper2 {
   display: block;
   text-align: center;
   margin: auto;
-  // width: $mob_width;
-
 }
 
-.l_r_wrap{
-  background-color: #7E947D; 
+//box for left and right flex:
+.l_r_wrap {
+ 
+}
+
+//left container:
+.left-container {
+  align-items: center;
+  margin: auto; //margin auto keeps straight lines at both sides as under the first container:
+  height: $mob_hight;
+  // background-color: #62798c;
 }
 
 //box with contactdetails and social media
 .flex-container_soc_contact {
   margin: auto;
   text-align: center;
-    display: block;
-  // width: $mob_width;
- }
-
-
-
-
-  
- 
-  
-
- 
-
-
-// .contact {
-//   margin: auto;
-//   display: block;
-//   width: $mob_width;
-//   height: $mob_hight;
-//   // border-style: $mob_b_style;
-//   // border-width: $mob_b_width_heading;
-// }
-
-div#contactId{
-  display: none;
-  width:99%;
+  display: block;
 }
 
-div#socialId{
-  display: none;
-}
-// .left_title_click{
-//   display: none;
-// }
-//  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-.left_title_click{
-  margin: auto;
- 
-  border-radius: 15px 50px 0px 0px;
-  
-  height: 24px;
-  // margin-bottom: 12px;
-   // width: 100%;
-  // margin-top: 12px;
-  // font-family: $myfont;
-  background-color: $bgc_h3;
-  // color: #F8F9F9 ;
-  // font-size: 20px;
-  // align-items: center;
-  // // padding-top: 6px;
-  // // padding-bottom: 6px;
-  // height: auto;
-  // justify-content: center;
-  // text-align: center;
-  padding: 0%;
-  // border-radius: 4px;
-
-}
 //Two buttons: contactdetails/ social media
- button{
+button {
   // override default yellow borders:
-  outline: none; 
+  outline: none;
   background: none;
   text-decoration: none;
   width: 100%;
@@ -261,145 +193,90 @@ div#socialId{
   margin-top: 10px;
   font-family: $myfont;
   background-color: $bgc_h3;
-  color: #F8F9F9 ;
+  color: #F8F9F9;
   font-size: 20px;
   align-items: center;
   padding: 0;
-  //padding-bottom: 6px;
   height: 24px;
   justify-content: center;
   text-align: center;
   border-radius: 15px 20px 0px 0px;
-
-
-  // background-color: $primary_main;
- 
-
-  
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
- 
-   //padding is very important: 2 values: top/bottom, right/left:
-  //  padding: 10px 0px;
-  //  border-style: $mob_b_style;
-  // border-width: $mob_b_width_main; 
 }
-//  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// button:hover{
-//   background-color: grey;
-// }
-.button:hover{
-  background-color:#18274a;
+
+.button:hover {
+  background-color: #18274a;
+}
+
+//button titles
+.left_title_click {
+  margin: auto;
+  border-radius: 15px 50px 0px 0px;
+  height: 24px;
+  background-color: $bgc_h3;
+  padding: 0%;
+}
+
+//js divs for buttons:
+div#contactId {
+  display: none;
+  width: 100%;
+}
+
+div#socialId {
+  display: none;
 }
 
 //contact icons:
-.con_i{
-  // margin: auto;
+.con_i {
   margin-bottom: 1px;
-  background-color: #47767a;
+  background-color: #f2f2aa;
 }
 
-// @media only screen and (min-width: 768px) {
-//   .con_i{
-//     background-color: #f2f2aa;
-//   }
-// }
+//unordered list social icons:
+.s_i {
+  margin: auto;
+  background-color: #f2f2aa;
+}
 
-// .social_media_title {
-//   // see h3
-// }
-
-.soc_icon{
-
+//link:
+.soc_icon {
   display: inline-flex;
-  // padding-top: 6px ;
-  // padding-bottom: 6px;
-  // padding: 8px;
   margin: 6px;
-  
 }
 
-  
-// .size_soc_icon{
-//   margin: 4px 2px;
-//   transition: 0.3s; 
-//   opacity: 1;
- 
-// }
-// .size_soc_icon:hover{
-//   opacity: 0.5;
-//   pointer-events: auto;
-
-
-// }
-
-//icoontjes social:
 .size_soc_icon {
- 
   align-content: center;
-  // background-color: green;
   transition: transform .2s;
-  // width: 32px;
-  // height: 32px;
-
-    width: 28px;
+  width: 28px;
   height: 28px;
-
   margin: 0 auto;
 }
 
 .size_soc_icon:hover {
   opacity: 0.5;
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
-.s_i{
-  margin: auto;
-  background-color: #47767a;
-  
-  
-  
-}
-
-
-
-.left-container {
-  align-items: center;
-  // display: block;
-  margin: auto; //margin auto keeps straight lines at both sides as under the first container:
-  // text-align: center;
-  // background-color: ;
-  // width: $mob_width;
-  height: $mob_hight;
-  // border-style: $mob_b_style;
-  // border-width: $mob_b_width_main;
-  // background-color:#859c84;
-  // background-color:#3d5e61;
-  background-color:#62798c 
-}
-
-// .prog_lang_title {
-//   // See h3
- 
-//}
-.icon-skill{
+//icons from programming lang:
+.icon-skill {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  div{
+
+  div {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    margin-top: 14px;
     margin-bottom: 6px;
   }
 }
 
-// Vaardigheden
-// .vdh_title{
-//   //h3
-//}
+//vdh info from left title vaardigheden:
 .vdh_info {
   margin-top: $mt;
   margin-bottom: 6px;
@@ -409,42 +286,42 @@ div#socialId{
   font-size: 14px;
 }
 
-// .lang_title {
-//   //h3
-//}
-
-.lang_info{
+// from left title talenkennis:
+.lang_info {
   display: flex;
   flex-direction: column;
-  margin-top: 6px;
-   margin-bottom: 8px;
-}
-span.language{
-font-family: $myfont2;
-font-size:  14px;
- padding-left: 50px;
-display: inline-block;
-width: 74px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-// Selects every <a> element whose href attribute value begins with "https":
-// [class^=pb] 
+span.language {
+  font-family: $myfont2;
+  font-size: 14px;
+  padding-left: 46px;
+  padding-right: 58px;
+  display: inline-block;
+  width: 74px;
+}
 
+//progress bars:
 progress {
-  width: 104px;
+  width: 100px;
   height: 6px;
-  border: 1px solid grey;
-  border-radius: 15px 50px 30px; 
-  margin-left: 6px;
-  
+  border: 1px solid black;
+  border-radius: 50px 20px;
+  margin-left: 30px;
 }
 
+progress[value]::-webkit-progress-bar {
+  background-color: #c6c9cc;
+  border: 1px solid black;
+  border-radius: 50px 20px;
+}
 
-
-// .eigenschap_title {
-//   //h3
-// }
-
+progress[value]::-webkit-progress-value {
+  background-color: #0f1b36;
+}
+//from left title eigenschappen:
 .eigenschap_info {
   margin-top: $mt;
   margin-bottom: 6px;
@@ -453,84 +330,49 @@ progress {
   font-size: 14px;
 }
 
-// .personalia_title {
-//   //h3
-// }
-
+//from left title personalia:
 .person_info {
   margin-top: $mt;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   margin-left: 6px;
+  padding-bottom: 6px;
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
 }
 
-// .main{
-//   background-color: #62798c; 
-// }
-
-.main-container {
-  // background-color: #7E947D;
-  // background-color: #62798c;
-
-  // background-color: #526170;
+.right-container {
   margin: auto;
   display: flex;
-  // background-color: #f6e0b5 ;
   display: block;
-  // width: $mob_width;
   height: $mob_hight;
-//   border-style: $mob_b_style;
-//   border-width: $mob_b_width_main;
-}
+  background-color: #607080;
+  
+  }
 
-
-.work_title {
-  // background-color: $bgc_info;
+.job_title {
   background-color: #2d4b63;
   color: #F8F9F9;
-
-  //h4
 }
-// @media only screen and (min-width: 768px) {
-//   .work_title{
-//     background-color: #2f473e;
-//     }
-// }
 
+p{
+  margin: 0 0 0.0em;
+}
 
-
-
-
-.work_info {
-  margin-top: $mt;
-  margin-bottom: 6px;
-  margin-left: 6px;
+.job_info {
+  padding-top: $mt;
+  padding-bottom: 6px;
+  padding-left: 6px;
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
-}
-.work_info2 {
-  margin-top: $mt;
-  margin-bottom: 6px;
-  margin-left: 6px;
-  font-family: $myfont2;
-  text-align: left;
-  font-size: 14px;
-  color:#F8F9F9; 
+  background-color: #607080;
+  margin: 0;
 }
 
-
-
-
-.school {
-  //h3
-}
 //proof has h5
 .proof {
-  // background-color:#556355;
-background-color:#2e4052;
+  background-color: #2e4052;
   color: #F8F9F9;
   margin: auto;
   font-family: $myfont;
@@ -540,22 +382,21 @@ background-color:#2e4052;
   padding-bottom: 6px;
   padding-left: 6px;
   height: auto;
-  // border-style: solid;
-  // border-width: thin;
-}
+  }
 
-
-
-// same as main container 
+// same as right container 
 .school_info {
-  margin-top: $mt;
-  margin-bottom: 6px;
-  margin-left: 6px;
+  // margin-top: $mt;
+  // margin-bottom: 6px;
+
+  padding-top: $mt;
+  padding-bottom: 6px;
+
+  padding-left: 6px;
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
-  // background-color:#7E947D;
-background-color: #526170;
+  // background-color: #526170;
+  background-color: #607080;
 
 }
-
