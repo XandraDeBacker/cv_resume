@@ -49,8 +49,15 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  .container_img {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -14px;
+    margin-left: -46px;
+  }
+
   h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   h2 {
@@ -108,7 +115,7 @@
   }
 
   .container_img {
-    margin-top: 150px;
+    margin-top: 140px;
     margin-left: -416px;
     display: flex;
     justify-content: flex-start;
@@ -210,6 +217,61 @@
 
   div#socialId {
     display: block;
+  }
+}
+@media only screen and (min-width: 1399px) {
+  h1 {
+    font-size: 3vw;
+  }
+
+  .container_img {
+    margin-top: 90px;
+    margin-left: -592px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+  }
+
+  .profile_img {
+    width: 128px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  .container_img {
+    margin-top: 90px;
+    margin-left: -592px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+  }
+
+  .profile_img {
+    width: 128px;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  h1 {
+    font-size: 2vw;
+  }
+
+  .container_img {
+    margin-top: 90px;
+    margin-left: -600px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+  }
+
+  .profile_img {
+    width: 130px;
   }
 }
 

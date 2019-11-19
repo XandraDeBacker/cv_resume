@@ -60,10 +60,18 @@ $mob_b_style: solid;
 }
 
 @media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 4vw;
+
+    .container_img {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -14px;
+        margin-left: -46px;
     }
-    h2{
+    h1 {
+        font-size: 0.5vw;
+    }
+
+    h2 {
         font-size: 3vw;
     }
 
@@ -121,15 +129,16 @@ $mob_b_style: solid;
     }
 
     .container_img {
-        margin-top: 150px;
-        margin-left: -416px;
+        top: 22vh;
+        left: 12vw;
         display: flex;
         justify-content: flex-start;
         position: absolute;
     }
 
     .profile_img {
-        width: 128px;
+        display: block;
+        width: 12vw;
     }
 
     .triangle_left {
@@ -142,14 +151,12 @@ $mob_b_style: solid;
         left: 10px;
         top: 16px;
         margin-left: 10px;
-       
     }
 
     .l_r_wrap {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     #left {
@@ -166,14 +173,14 @@ $mob_b_style: solid;
     }
 
     .flex-container_soc_contact {
-       margin-top: 30px;
-      }
-
-    .button{
         margin-top: 30px;
-        
     }
-    .social{
+
+    .button {
+        margin-top: 30px;
+    }
+
+    .social {
         margin-top: 30px;
     }
 
@@ -182,40 +189,34 @@ $mob_b_style: solid;
         align-items: center;
         margin-left: -40px;
     }
-    
-    // #right{
-    //     display: flex;
-    //     flex-flow: wrap;
-    // }
+
     .right-container {
         width: 98%;
         justify-content: space-between;
         margin-top: -190px;
         padding-left: 12px;
-        background-color:#526170 ;
+        background-color: #526170;
     }
 
     .right2-container {
         width: 98%;
-    //    align-self: flex-start;
-        
         padding-left: 12px;
-        background-color:#526170 ;
-
+        background-color: #526170;
     }
 
     h3 {
         width: 100%;
     }
 
-    .jobexperience{
-       display: flex; 
-       justify-content: flex-start;
-       padding-left: 200px;
-       padding-top: 84px;
+    .jobexperience {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 200px;
+        padding-top: 84px;
     }
-    .school{
-        display: flex; 
+
+    .school {
+        display: flex;
         justify-content: flex-start;
         padding-left: 212px;
     }
@@ -233,6 +234,43 @@ $mob_b_style: solid;
     div#socialId {
         display: block;
     }
+}
+
+@media only screen and (min-width: 1399px) {
+
+    h1 {
+        font-size: 2vw;
+    }
+
+    
+
 
 
 }
+
+
+@media only screen and (min-width: 1440px) {
+
+  
+
+    
+   
+
+   
+
+}
+
+@media only screen and (max-width: 1680px) {
+
+   
+    
+
+   
+
+}
+
+
+
+
+
+

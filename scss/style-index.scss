@@ -47,7 +47,8 @@ body {
 
 //Picture:
 .profile_img {
-  width: 120px;
+  display: block;
+  width: 12vw;
   border-radius: 50%;
 }
 
@@ -58,7 +59,6 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: $myfont4;
-  font-size: 21px;
   font-size: 6vw;
   font-weight: 800;
   text-shadow: 1px 2px 2px #735556;
