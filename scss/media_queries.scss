@@ -1,215 +1,238 @@
-// $primary_main: #7e947d;
 $primary_main: #526170;
 $mob_width: 96vw;
 $mob_hight: auto;
-$myfont2: 'Roboto',sans-serif;
+$myfont2: 'Roboto',
+sans-serif;
 $mob_b_width_main:medium;
 $mob_b_style: solid;
 
 
-@media only screen and (min-width: 375px){
-    .container_img{
+@media only screen and (min-width: 375px) {
+    .container_img {
         display: flex;
         justify-content: flex-start;
         margin-top: -14px;
         margin-left: -4px;
     }
-    h1{
+
+    h1 {
         display: flex;
-        justify-content: center;  
+        justify-content: center;
     }
-    h2{
+
+    h2 {
         display: flex;
         justify-content: flex-end;
         margin-right: 6px;
     }
-    span.language{
+
+    span.language {
         padding-left: 70px;
         width: 78px;
     }
-    .progress{
+
+    .progress {
         width: 130px;
         margin-left: 12px;
     }
 }
 
-@media only screen and (min-width: 425px){
-    .container_img{
+@media only screen and (min-width: 425px) {
+    .container_img {
         margin-top: -24px;
     }
-    h2{
+
+    h2 {
         display: flex;
         justify-content: flex-end;
         margin-right: 6px;
     }
-    span.language{
+
+    span.language {
         padding-left: 80px;
         width: 78px;
-        }
-        progress {
+    }
+
+    progress {
         width: 150px;
-        margin-left: 26px;     
+        margin-left: 26px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-        h1{
+    h1 {
         font-size: 4vw;
-        }
-       .lang_info{
+    }
+    h2{
+        font-size: 3vw;
+    }
+
+    .lang_info {
         display: flex;
         align-items: center;
-    }  
+    }
+
+    span.language {
+        padding-left: 50px;
+        width: 78px;
+    }
+
+    .progress {
+        width: 130px;
+        margin-left: 12px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
 
-    .container_head{ 
-       position: relative;
-       z-index: 1;
-    
-    
-    } 
-
-    // .intro{
-    //     display: flex; 
-    //     justify-content: flex-end;
-    //     position: relative; 
-    // }
-
-    .head-wrapper{
+    .container_head {
         position: relative;
-        height: 260px; 
+        z-index: 1;
+    }
+
+    .head-wrapper {
+        position: relative;
+        height: 260px;
         display: flex;
         background-color: transparent;
-     padding-right: 20px;
+        padding-right: 20px;
+        width: 99%;
     }
-    .head-wrapper::before{
+
+    .head-wrapper::before {
         position: absolute;
         top: 0;
         left: 0;
         content: "";
         width: 100%;
         height: 100%;
-        clip-path: polygon(100% 0, 0 0, 100% 100%);  
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
         background-color: #62798c;
     }
 
-    // .wrapper2{
-    //     display: flex;
-    //     align-items: flex-end;
-    // }
-    h1{
-        font-size: 3vw;   
+    .wrapper2 {
+        position: absolute;
+        z-index: 2;
     }
 
-    .container_img{
-        margin-top: 20px;
-        margin-left: -240px;
-        display: flex; 
+    h1 {
+        font-size: 4vw;
+    }
+
+    .container_img {
+        margin-top: 150px;
+        margin-left: -416px;
+        display: flex;
         justify-content: flex-start;
         position: absolute;
     }
-    // .profile_img{
-    //     position: absolute;
-    // }
 
-    .triangle_left{
+    .profile_img {
+        width: 128px;
+    }
+
+    .triangle_left {
         display: flex;
-        background-color: burlywood;
+        background-color: #f2f2aa;
         width: 600px;
         height: 900px;
-        clip-path: polygon(0 0, 0 31%, 49% 0);
+        clip-path: polygon(0 0, 0 30%, 74% 0);
         position: absolute;
         left: 10px;
         top: 16px;
-    }
-
-    .l_r_wrap{
-       display: flex;
-       flex-direction: row;
-
-    }
-
-    #left{
-        // display: flex;
-        // order: integer;
-        width: 40em;
+        margin-left: 10px;
        
-        // flex-grow: 6; 
-     }
+    }
+
+    .l_r_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #left {
+        width: 40em;
+    }
 
     .left-container {
         box-sizing: border-box;
         width: 100%;
-        // display: flex;
-        // order: integer;
-        // flex-grow: 6;
         align-items: center;
         display: block;
         margin: auto; //margin auto keeps straight lines at both sides as under the first container:
         height: $mob_hight;
-        // border-style: $mob_b_style;
-        // border-width: $mob_b_width_main;
-        // background-color:#859c84;
-        // background-color: #62798c
-    }
-       
-
-
-   
-   
-   
-
-     .right-container{
-        
-        // display: flex;
-        
-        
-        // justify-content: flex-end;
-        width:98% ;
-        justify-content: space-evenly;
-        // padding-right: 30px;
-        
     }
 
-    .job_title{
-        background-color: #2f473e;
-     }
+    .flex-container_soc_contact {
+       margin-top: 30px;
+      }
 
-//FLOAT LEFT RIGHT NOOIT GEBRUIKEN. ENKEL FLEXBOX
+    .button{
+        margin-top: 30px;
+        
+    }
+    .social{
+        margin-top: 30px;
+    }
 
+    .lang {
+        display: flex;
+        align-items: center;
+        margin-left: -40px;
+    }
     
+    // #right{
+    //     display: flex;
+    //     flex-flow: wrap;
+    // }
+    .right-container {
+        width: 98%;
+        justify-content: space-between;
+        margin-top: -190px;
+        padding-left: 12px;
+        background-color:#526170 ;
+    }
 
-      h3{
-          width: 100%;
-       
-      }
+    .right2-container {
+        width: 98%;
+    //    align-self: flex-start;
+        
+        padding-left: 12px;
+        background-color:#526170 ;
 
-      .left_title {
+    }
+
+    h3 {
         width: 100%;
-    //     float: left;
-       }
-      .contact {
-        //   width: 40%;
-      }
+    }
 
-      div#contactId{
-        display: block;
-        // width: 40%;
-    //     float: left;
-       }
-      
+    .jobexperience{
+       display: flex; 
+       justify-content: flex-start;
+       padding-left: 200px;
+       padding-top: 84px;
+    }
+    .school{
+        display: flex; 
+        justify-content: flex-start;
+        padding-left: 212px;
+    }
 
-      div#socialId{
+    .left_title {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    div#contactId {
         display: block;
-        // width: 40%;
-    //     float: left;
-      }
+    }
+
+
+    div#socialId {
+        display: block;
+    }
 
 
 }
-
-      
-
-  

@@ -30,6 +30,7 @@ $mb: 6px;
 body {
   // height: 100vh;
   background-color: $primary_main;
+  display: flex;
 }
 
 .container_img {
@@ -94,7 +95,9 @@ h3 {
 
 //h4 = gsm en emailadres:
 h4 {
-  background-color: #a1aba1;
+  // background-color: #a1aba1;
+  // background-color: #2d4b63;
+  background-color: #607080;
   font-family: $myfont;
   font-size: 16px;
   margin: auto;
@@ -349,9 +352,17 @@ progress[value]::-webkit-progress-value {
   background-color: #607080;
   
   }
+  .right2-container{
+  margin: auto;
+  display: flex;
+  display: block;
+  height: $mob_hight;
+  background-color: #607080;
+  }
 
 .job_title {
-  background-color: #2d4b63;
+  // background-color: #2d4b63;
+  background-color:#2e4052 ;
   color: #F8F9F9;
 }
 
@@ -399,4 +410,11 @@ p{
   // background-color: #526170;
   background-color: #607080;
 
+}
+.footer{
+  font-family: $myfont;
+  font-size: 11px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
