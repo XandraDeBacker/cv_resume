@@ -57,7 +57,7 @@
   }
 
   h1 {
-    font-size: 3vw;
+    font-size: 0.5vw;
   }
 
   h2 {
@@ -86,12 +86,11 @@
   }
 
   .head-wrapper {
-    position: relative;
     height: 260px;
     display: flex;
     background-color: transparent;
     padding-right: 20px;
-    width: 99%;
+    width: 98%;
   }
 
   .head-wrapper::before {
@@ -111,19 +110,20 @@
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .container_img {
-    margin-top: 140px;
-    margin-left: -416px;
+    top: 22vh;
+    left: 12vw;
     display: flex;
     justify-content: flex-start;
     position: absolute;
   }
 
   .profile_img {
-    width: 128px;
+    display: block;
+    width: 12vw;
   }
 
   .triangle_left {
@@ -141,7 +141,6 @@
   .l_r_wrap {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   #left {
@@ -176,15 +175,14 @@
   }
 
   .right-container {
-    width: 98%;
-    justify-content: space-between;
-    margin-top: -190px;
+    width: 100%;
+    margin-top: -196px;
     padding-left: 12px;
     background-color: #526170;
   }
 
   .right2-container {
-    width: 98%;
+    width: 100%;
     padding-left: 12px;
     background-color: #526170;
   }
@@ -221,57 +219,7 @@
 }
 @media only screen and (min-width: 1399px) {
   h1 {
-    font-size: 3vw;
-  }
-
-  .container_img {
-    margin-top: 90px;
-    margin-left: -592px;
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-  }
-
-  .profile_img {
-    width: 128px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  h1 {
-    font-size: 3vw;
-  }
-
-  h2 {
     font-size: 2vw;
-  }
-
-  .container_img {
-    margin-top: 90px;
-    margin-left: -592px;
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-  }
-
-  .profile_img {
-    width: 128px;
-  }
-}
-@media only screen and (min-width: 1536px) {
-  h1 {
-    font-size: 2vw;
-  }
-
-  .container_img {
-    margin-top: 90px;
-    margin-left: -600px;
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-  }
-
-  .profile_img {
-    width: 130px;
   }
 }
 

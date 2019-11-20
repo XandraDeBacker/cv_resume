@@ -10,7 +10,8 @@ body {
 }
 
 .profile_img {
-  width: 120px;
+  display: block;
+  width: 12vw;
   border-radius: 50%;
 }
 
@@ -19,7 +20,6 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Coda Caption", sans-serif;
-  font-size: 21px;
   font-size: 6vw;
   font-weight: 800;
   text-shadow: 1px 2px 2px #735556;
@@ -142,21 +142,21 @@ button {
   font-size: 20px;
   align-items: center;
   padding: 0;
-  height: 24px;
+  height: 30px;
   justify-content: center;
   text-align: center;
   border-radius: 15px 20px 0px 0px;
 }
 
-.button:hover {
-  background-color: #18274a;
+button:hover {
+  opacity: 0.8;
 }
 
 .left_title_click {
   margin: auto;
   border-radius: 15px 50px 0px 0px;
   height: 24px;
-  background-color: #0f1b36;
+  background-color: transparent;
   padding: 0%;
 }
 
@@ -206,7 +206,7 @@ div#socialId {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.icon-skill div {
+.icon-skill .lang_icons {
   display: flex;
   justify-content: space-evenly;
   text-align: center;

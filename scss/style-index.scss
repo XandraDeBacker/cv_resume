@@ -119,6 +119,7 @@ h5 {
   padding-left: 6px;
   height: auto;
 }
+
 //h6 nog niet gebruikt:
 h6 {
   margin: auto;
@@ -164,11 +165,6 @@ h6 {
   margin: auto;
 }
 
-//box for left and right flex:
-.l_r_wrap {
- 
-}
-
 //left container:
 .left-container {
   align-items: center;
@@ -200,22 +196,22 @@ button {
   font-size: 20px;
   align-items: center;
   padding: 0;
-  height: 24px;
+  height: 30px;
   justify-content: center;
   text-align: center;
   border-radius: 15px 20px 0px 0px;
 }
 
-.button:hover {
-  background-color: #18274a;
+button:hover {
+  opacity: 0.8
 }
 
-//button titles
+// button titles:
 .left_title_click {
   margin: auto;
   border-radius: 15px 50px 0px 0px;
   height: 24px;
-  background-color: $bgc_h3;
+  background-color:transparent;
   padding: 0%;
 }
 
@@ -270,7 +266,7 @@ div#socialId {
   flex-direction: column;
   justify-content: space-evenly;
 
-  div {
+  .lang_icons {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -324,6 +320,7 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   background-color: #0f1b36;
 }
+
 //from left title eigenschappen:
 .eigenschap_info {
   margin-top: $mt;
@@ -350,23 +347,24 @@ progress[value]::-webkit-progress-value {
   display: block;
   height: $mob_hight;
   background-color: #607080;
-  
-  }
-  .right2-container{
+
+}
+
+.right2-container {
   margin: auto;
   display: flex;
   display: block;
   height: $mob_hight;
   background-color: #607080;
-  }
+}
 
 .job_title {
   // background-color: #2d4b63;
-  background-color:#2e4052 ;
+  background-color: #2e4052;
   color: #F8F9F9;
 }
 
-p{
+p {
   margin: 0 0 0.0em;
 }
 
@@ -393,7 +391,7 @@ p{
   padding-bottom: 6px;
   padding-left: 6px;
   height: auto;
-  }
+}
 
 // same as right container 
 .school_info {
@@ -411,7 +409,8 @@ p{
   background-color: #607080;
 
 }
-.footer{
+
+.footer {
   font-family: $myfont;
   font-size: 11px;
   display: flex;
