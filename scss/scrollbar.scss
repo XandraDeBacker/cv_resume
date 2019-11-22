@@ -1,4 +1,4 @@
-$mob_width: 96vw;
+$mob_width: 100vw;
 $primary_main: #526170;
 // html {
 //     background: lightgrey;
@@ -6,14 +6,11 @@ $primary_main: #526170;
 //     overflow: hidden;
 //   }
 
-html {
-    background:$primary_main;
-    height: 100%;
-    // overflow: hidden;
-  }
+
   body {
+    overflow-x: hidden;
     height: 100%;
-    background: whitesmoke;
+    background: #526170;
     overflow: scroll;
     // margin: 0 auto;
     padding: 1em;
@@ -24,7 +21,7 @@ html {
     margin: 0 0 1.5em;
   }
   
-  body::-webkit-scrollbar {
+  body::-webkit-scrollbar{
       width: 0.5em;
   }
    
@@ -34,6 +31,6 @@ html {
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 0.5px solid slategrey;
+    background-color: #0f1b36;
+    outline: 0.8px solid slategrey;
   }

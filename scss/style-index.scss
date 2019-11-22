@@ -1,11 +1,19 @@
 // @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap'); // $fontsizeMob: 10px;
-$textcolor: #191970; //MidnightBlue
-// $primary_main: #7e947d;
+$textcolor: #000000;
 $primary_main:#526170;
-$primary_side: #F5DEB3;
-$bgc_h3: #0f1b36;
-$bgc_soc: #3d5e61;
-$bgc_info:#3d5e61;
+$bgc_triangle-left: #f2f2aa;
+$bgc_triangle-right:#62798c; 
+$clr_h1-text:#0f1b36;
+$clr_h1-text-shadow:#735556;
+$bgc_h2: #c0c0c0;
+$bgc_h3_title: #0f1b36;
+$bcg_h4:#2e4052;
+$clr_h4-text:#F8F9F9; 
+$bgc_h5:#52687d;
+$bgc_info:#607080;
+$clr_text-title:#F8F9F9;
+$bgc_con_si_info: #f2f2aa;
+
 $myfont: 'Roboto Condensed',
 sans-serif;
 $myfont2: 'Roboto',
@@ -28,7 +36,6 @@ $mr: 10px;
 $mb: 6px;
 
 body {
-  // height: 100vh;
   background-color: $primary_main;
   display: flex;
 }
@@ -37,6 +44,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 6px;
+  //nesting:
   // p {
   //   Info om naast foto te zetten
   //   order: 1;
@@ -48,7 +56,7 @@ body {
 //Picture:
 .profile_img {
   display: block;
-  width: 12vw;
+  width: 30vw;
   border-radius: 50%;
 }
 
@@ -56,23 +64,25 @@ body {
 // h1 = naam:
 h1 {
   margin: auto;
+  margin-top: $mt;
   display: flex;
-  justify-content: center;
   font-family: $myfont4;
+  color: $clr_h1-text;
+  text-shadow: 1px 2px 2px $clr_h1-text-shadow;
   font-size: 6vw;
   font-weight: 800;
-  text-shadow: 1px 2px 2px #735556;
   letter-spacing: 3px;
-  margin-top: $mt;
+ 
 }
 
 // h2 = class shimmer junior web dev:
 h2 {
   font-family: $myfont2;
-  font-size: 20px;
-  text-align: right;
+  background-color: $bgc_h2;
   margin-top: $mt;
   margin-bottom: $mb;
+  font-size: 4vw;
+  text-align: right;
   margin-right: 24px;
 }
 
@@ -81,51 +91,36 @@ h3 {
   margin: auto;
   margin-top: 12px;
   font-family: $myfont;
-  background-color: $bgc_h3;
-  color: #F8F9F9;
+  background-color: $bgc_h3_title;
+  color: $clr_text-title;
   font-size: 20px;
   align-items: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
   height: auto;
   justify-content: center;
   text-align: center;
   border-radius: 4px;
+  padding: 8px 0px 8px 14px;
 }
 
-//h4 = gsm en emailadres:
+//h4 = 2nd titles
 h4 {
-  // background-color: #a1aba1;
-  // background-color: #2d4b63;
-  background-color: #607080;
+  background-color: $bcg_h4;
+  color: $clr_h4-text;
   font-family: $myfont;
   font-size: 16px;
   margin: auto;
-  padding-top: 6px;
-  padding-left: 6px;
-  padding-bottom: 6px;
   height: auto;
+  padding: 8px 14px 8px 14px;
 }
 
-//h5 proof titels diploma certificaten:
+//h5= job location/ edu info
 h5 {
-  background-color: #52687d;
+  background-color: $bgc_h5;
   margin: auto;
   font-family: $myfont;
   font-size: 15px;
-  padding: 8px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 6px;
+  padding: 8px 0px 8px 14px;
   height: auto;
-}
-
-//h6 nog niet gebruikt:
-h6 {
-  margin: auto;
-  font-family: $myfont;
-  font-size: 14px;
-  padding: 8px;
 }
 
 // programming Icon sizes:
@@ -146,16 +141,18 @@ h6 {
 }
 
 .wrapper {
-  background-color: #526170;
+  background-color: $primary_main;
 }
 
 //head wrapper has section with name jobtitle and img:
-.head-wrapper {
+.head-wrapper_r-triangle {
+  width: 100%;
   justify-content: center;
   margin: auto;
   display: flex;
   height: $mob_hight;
-  background-color: #62798c
+  background-color: $bgc_triangle-right;
+  margin-bottom: 10px;
 }
 
 //name and job title for shimmer
@@ -170,7 +167,8 @@ h6 {
   align-items: center;
   margin: auto; //margin auto keeps straight lines at both sides as under the first container:
   height: $mob_hight;
-  // background-color: #62798c;
+  border-radius: 15px 20px 0px 0px;
+  background-color: $primary_main;
 }
 
 //box with contactdetails and social media
@@ -180,19 +178,17 @@ h6 {
   display: block;
 }
 
-//Two buttons: contactdetails/ social media
+//Two buttons: contactdetails/ social media:
 button {
-  // override default yellow borders:
+  // override default yellow borders with outline on none:
   outline: none;
   background: none;
   text-decoration: none;
   width: 100%;
   margin: auto;
-  margin-bottom: 2px;
-  margin-top: 10px;
   font-family: $myfont;
-  background-color: $bgc_h3;
-  color: #F8F9F9;
+  background-color: $bgc_h3_title;
+  color: $clr_text_title;
   font-size: 20px;
   align-items: center;
   padding: 0;
@@ -203,7 +199,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.8
+  opacity: 0.6;
 }
 
 // button titles:
@@ -211,7 +207,7 @@ button:hover {
   margin: auto;
   border-radius: 15px 50px 0px 0px;
   height: 24px;
-  background-color:transparent;
+  background-color: transparent;
   padding: 0%;
 }
 
@@ -224,23 +220,38 @@ div#contactId {
 div#socialId {
   display: none;
 }
+.contact_title{
+  background-color: $bgc_info;
+  color: $textcolor;
+}
 
 //contact icons:
-.con_i {
-  margin-bottom: 1px;
-  background-color: #f2f2aa;
+.con_info {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: $bgc_con_si_info;
+  margin: 0em;
+}
+
+.con_info_2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: $bgc_con_si_info;
+  border-radius: 0px 0px 10px 10px;
 }
 
 //unordered list social icons:
 .s_i {
   margin: auto;
-  background-color: #f2f2aa;
+  background-color: $bgc_con_si_info;
+  border-radius: 0px 0px 10px 10px;
 }
+
 
 //link:
 .soc_icon {
   display: inline-flex;
-  margin: 6px;
+  margin: 8px;
 }
 
 .size_soc_icon {
@@ -265,39 +276,41 @@ div#socialId {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: $bgc_info;
 
-  .lang_icons {
+  .prog-lang_icons {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     margin-top: 14px;
     margin-bottom: 6px;
+    padding-bottom: 4px;
   }
 }
 
 //vdh info from left title vaardigheden:
-.vdh_info {
-  margin-top: $mt;
-  margin-bottom: 6px;
-  margin-left: 6px;
+.skills_info {
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
   font-family: $myfont2;
-  text-align: left;
+  text-align: center;
   font-size: 14px;
 }
 
 // from left title talenkennis:
 .lang_info {
+  font-family: $myfont2;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 span.language {
   font-family: $myfont2;
   font-size: 14px;
-  padding-left: 46px;
-  padding-right: 58px;
+  padding-left: 40px;
+  padding-right: 60px;
   display: inline-block;
   width: 74px;
 }
@@ -321,99 +334,65 @@ progress[value]::-webkit-progress-value {
   background-color: #0f1b36;
 }
 
-//from left title eigenschappen:
-.eigenschap_info {
-  margin-top: $mt;
+.characteristics_info {
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
   margin-bottom: 6px;
   font-family: $myfont2;
   text-align: center;
   font-size: 14px;
 }
 
-//from left title personalia:
 .person_info {
-  margin-top: $mt;
+  background-color: $bgc_info;
   margin-bottom: 0px;
-  margin-left: 6px;
   padding-bottom: 6px;
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
+  padding: 8px 14px 8px 14px;
 }
 
 .right-container {
   margin: auto;
-  display: flex;
   display: block;
   height: $mob_hight;
-  background-color: #607080;
 
 }
 
 .right2-container {
   margin: auto;
-  display: flex;
   display: block;
   height: $mob_hight;
-  background-color: #607080;
+
 }
 
-.job_title {
-  // background-color: #2d4b63;
-  background-color: #2e4052;
-  color: #F8F9F9;
-}
-
-p {
-  margin: 0 0 0.0em;
-}
 
 .job_info {
-  padding-top: $mt;
-  padding-bottom: 6px;
-  padding-left: 6px;
   font-family: $myfont2;
   text-align: left;
   font-size: 14px;
-  background-color: #607080;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
   margin: 0;
 }
 
-//proof has h5
-.proof {
-  background-color: #2e4052;
-  color: #F8F9F9;
-  margin: auto;
-  font-family: $myfont;
-  font-size: 16px;
-  padding: 8px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 6px;
-  height: auto;
-}
-
-// same as right container 
-.school_info {
-  // margin-top: $mt;
-  // margin-bottom: 6px;
-
-  padding-top: $mt;
-  padding-bottom: 6px;
-
-  padding-left: 6px;
-  font-family: $myfont2;
-  text-align: left;
-  font-size: 14px;
-  // background-color: #526170;
-  background-color: #607080;
-
+.edu_location{
+    font-family: $myfont2;
+    text-align: left;
+    font-size: 14px;
+    background-color: $bgc_info;
+    padding: 8px 14px 8px 14px;
+    margin: 0;
 }
 
 .footer {
+  background-color: $bgc_info;
   font-family: $myfont;
   font-size: 11px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px 14px 2px 14px;
 }

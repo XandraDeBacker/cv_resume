@@ -1,11 +1,7 @@
-html {
-  background: #526170;
-  height: 100%;
-}
-
 body {
+  overflow-x: hidden;
   height: 100%;
-  background: whitesmoke;
+  background: #526170;
   overflow: scroll;
   padding: 1em;
 }
@@ -24,8 +20,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 0.5px solid slategrey;
+  background-color: #0f1b36;
+  outline: 0.8px solid slategrey;
 }
 
 /*# sourceMappingURL=scrollbar.css.map */

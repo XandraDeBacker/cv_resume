@@ -1,3 +1,5 @@
+$bgc_triangle-left: #f2f2aa;
+$bgc_triangle-right:#62798c;
 $primary_main: #526170;
 $mob_width: 96vw;
 $mob_hight: auto;
@@ -13,6 +15,11 @@ $mob_b_style: solid;
         justify-content: flex-start;
         margin-top: -14px;
         margin-left: -4px;
+    }
+
+    .profile_img {
+
+        width: 26vw;
     }
 
     h1 {
@@ -49,7 +56,7 @@ $mob_b_style: solid;
     }
 
     span.language {
-        padding-left: 80px;
+        padding-left: 60px;
         width: 78px;
     }
 
@@ -67,8 +74,14 @@ $mob_b_style: solid;
         margin-top: -14px;
         margin-left: -46px;
     }
+
+    .profile_img {
+
+        width: 18vw;
+    }
+
     h1 {
-        font-size: 0.5vw;
+        font-size: 4vw;
     }
 
     h2 {
@@ -97,20 +110,27 @@ $mob_b_style: solid;
     .container_head {
         position: relative;
         z-index: 1;
-       
+
     }
 
-    .head-wrapper {
-        // position: relative;
-        height: 260px;
+    .head-wrapper_r-triangle {
+        position: relative;
+        height: 262px;
         display: flex;
         background-color: transparent;
-        padding-right: 20px;
-        width: 98%;
-        
+        // padding-right: 20px;
+        width: 100%;
+        justify-content: flex-end;
+
     }
 
-    .head-wrapper::before {
+    .wrapper2 {
+        display: block;
+        text-align: right;
+        margin: auto;
+    }
+
+    .head-wrapper_r-triangle::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -118,22 +138,33 @@ $mob_b_style: solid;
         width: 100%;
         height: 100%;
         clip-path: polygon(100% 0, 0 0, 100% 100%);
-        background-color: #62798c;
-        
+        background-color:$bgc_triangle-right;
+
     }
+
+
+    #intro {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: 26px;
+    }
+
 
     .wrapper2 {
         position: absolute;
         z-index: 2;
-     }
+    }
 
-    h1 {
-        font-size: 3vw;
+
+    h2 {
+        font-size: 2vw;
     }
 
     .container_img {
-        top: 22vh;
-        left: 12vw;
+        top: 130px;
+        left: 140px;
         display: flex;
         justify-content: flex-start;
         position: absolute;
@@ -141,17 +172,17 @@ $mob_b_style: solid;
 
     .profile_img {
         display: block;
-        width: 12vw;
+        width: 10vw;
     }
 
     .triangle_left {
         display: flex;
-        background-color: #f2f2aa;
+        background-color: $bgc_triangle-left;
         width: 600px;
         height: 900px;
-        clip-path: polygon(0 0, 0 30%, 74% 0);
+        clip-path: polygon(0 0, 0 30%, 71% 0);
         position: absolute;
-        left: 10px;
+        left: 8px;
         top: 16px;
         margin-left: 10px;
     }
@@ -164,6 +195,9 @@ $mob_b_style: solid;
 
     #left {
         width: 40em;
+        margin-top: 20px;
+        // background-color: #607080;
+        background-color: $primary_main;
     }
 
     .left-container {
@@ -173,10 +207,11 @@ $mob_b_style: solid;
         display: block;
         margin: auto; //margin auto keeps straight lines at both sides as under the first container:
         height: $mob_hight;
+
     }
 
     .flex-container_soc_contact {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .button {
@@ -195,7 +230,7 @@ $mob_b_style: solid;
 
     .right-container {
         width: 100%;
-        margin-top: -196px;
+        margin-top: -208px;
         padding-left: 12px;
         background-color: #526170;
     }
@@ -240,16 +275,32 @@ $mob_b_style: solid;
 
 @media only screen and (min-width: 1399px) {
 
-    h1 {
-        font-size: 2vw;
+    .triangle_left {
+
+        clip-path: polygon(0 0, 0 30%, 99% 0);
     }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    .right-container {
+
+        margin-top: -210px;
+        padding-left: 12px;
+
+    }
+
 }
 
+@media only screen and (min-width: 1580px) {
+    .container_img {
+        top: 100px;
+        left: 160px;
+    }
 
+    .triangle_left {
+        clip-path: polygon(0 0, 0 30%, 116% 0);
+    }
 
-    
-
-
-
-
-
+}
