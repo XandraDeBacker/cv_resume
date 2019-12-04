@@ -1,39 +1,64 @@
 // @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap'); // $fontsizeMob: 10px;
-$textcolor: #000000;
-$primary_main:#526170;
-$bgc_triangle-left: #f2f2aa;
-$bgc_triangle-right:#62798c; 
-$clr_h1-text:#0f1b36;
-$clr_h1-text-shadow:#735556;
-$bgc_h2: #c0c0c0;
-$bgc_h3_title: #0f1b36;
-$bcg_h4:#2e4052;
-$clr_h4-text:#F8F9F9; 
-$bgc_h5:#52687d;
-$bgc_info:#607080;
-$clr_text-title:#F8F9F9;
-$bgc_con_si_info: #f2f2aa;
+@import'variables.scss';
+@import'mixin_style-right-containers.scss';
+// $clr_contact_title: #000000;
+// $primary_main:#526170;
+// $bgc_triangle-left: #f2f2aa;
+// $bgc_triangle-right:#62798c;
+// $clr_h1-text:#0f1b36;
+// $clr_h1-text-shadow:#735556;
+// $bgc_h2: #c0c0c0;
+// $bgc_h3_title: #0f1b36;
+// $bcg_h4:#2e4052;
+// $clr_h4-text:#F8F9F9;
+// $bgc_h5:#52687d;
+// $bgc_info:#607080;
+// $clr_text-title:#F8F9F9;
+// $bgc_con_si_info: #f2f2aa;
 
-$myfont: 'Roboto Condensed',
-sans-serif;
-$myfont2: 'Roboto',
-sans-serif;
-$myfont3: 'Coda',
-cursive;
-$myfont4: 'Coda Caption',
-sans-serif;
+// $myfont: 'Roboto Condensed',
+// sans-serif;
+// $myfont2: 'Roboto',
+// sans-serif;
+// $myfont3: 'Coda',
+// cursive;
+// $myfont4: 'Coda Caption',
+// sans-serif;
 
-$icon_width_1: 26px;
-$icon_width_2: 36px;
-$icon_width_3: 38px;
-$mob_width: 96vw;
-$mob_hight: auto;
-$mob_b_style: solid;
-$mob_b_width_main: medium;
-$mob_b_width_heading: thin;
-$mt: 10px;
-$mr: 10px;
-$mb: 6px;
+// $icon_width_1: 26px;
+// $icon_width_2: 36px;
+// $icon_width_3: 38px;
+// $mob_width: 96vw;
+// $mob_hight: auto;
+// $mob_b_style: solid;
+// $mob_b_width_main: medium;
+// $mob_b_width_heading: thin;
+// $mt: 10px;
+// $mr: 10px;
+// $mb: 6px;
+
+// @mixin style-right-containers {
+//   margin: auto;
+//   display: block;
+//   height: $mob_hight;
+// }
+
+@mixin styling2 {
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
+  margin: 0;
+}
+
+@mixin p-style {
+  font-family: $myfont2;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
 
 body {
   background-color: $primary_main;
@@ -72,7 +97,7 @@ h1 {
   font-size: 6vw;
   font-weight: 800;
   letter-spacing: 3px;
- 
+
 }
 
 // h2 = class shimmer junior web dev:
@@ -214,15 +239,16 @@ button:hover {
 //js divs for buttons:
 div#contactId {
   display: none;
-  width: 100%;
+
 }
 
 div#socialId {
   display: none;
 }
-.contact_title{
+
+.contact_title {
   background-color: $bgc_info;
-  color: $textcolor;
+  color: $clr_contact_title;
 }
 
 //contact icons:
@@ -246,7 +272,6 @@ div#socialId {
   background-color: $bgc_con_si_info;
   border-radius: 0px 0px 10px 10px;
 }
-
 
 //link:
 .soc_icon {
@@ -290,15 +315,13 @@ div#socialId {
 
 //vdh info from left title vaardigheden:
 .skills_info {
-  background-color: $bgc_info;
-  padding: 8px 14px 8px 14px;
-  font-family: $myfont2;
   text-align: center;
-  font-size: 14px;
+  @include p-style;
+  margin-bottom: 0px;
 }
 
-// from left title talenkennis:
-.lang_info {
+// left:
+.lang_info-box {
   font-family: $myfont2;
   background-color: $bgc_info;
   padding: 8px 14px 8px 14px;
@@ -335,55 +358,32 @@ progress[value]::-webkit-progress-value {
 }
 
 .characteristics_info {
-  background-color: $bgc_info;
-  padding: 8px 14px 8px 14px;
-  margin-bottom: 6px;
-  font-family: $myfont2;
+  @include p-style;
   text-align: center;
-  font-size: 14px;
 }
 
 .person_info {
-  background-color: $bgc_info;
+  @include p-style;
   margin-bottom: 0px;
-  padding-bottom: 6px;
-  font-family: $myfont2;
   text-align: left;
-  font-size: 14px;
-  padding: 8px 14px 8px 14px;
 }
 
+//right:
 .right-container {
-  margin: auto;
-  display: block;
-  height: $mob_hight;
+  @include style-right-containers;
 
 }
 
 .right2-container {
-  margin: auto;
-  display: block;
-  height: $mob_hight;
-
+  @include style-right-containers;
 }
-
 
 .job_info {
-  font-family: $myfont2;
-  text-align: left;
-  font-size: 14px;
-  background-color: $bgc_info;
-  padding: 8px 14px 8px 14px;
-  margin: 0;
+  @include styling2;
 }
 
-.edu_location{
-    font-family: $myfont2;
-    text-align: left;
-    font-size: 14px;
-    background-color: $bgc_info;
-    padding: 8px 14px 8px 14px;
-    margin: 0;
+.edu_location {
+  @include styling2;
 }
 
 .footer {

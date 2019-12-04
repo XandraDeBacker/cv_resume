@@ -153,7 +153,6 @@ button:hover {
 
 div#contactId {
   display: none;
-  width: 100%;
 }
 
 div#socialId {
@@ -223,14 +222,16 @@ div#socialId {
 }
 
 .skills_info {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
   background-color: #607080;
   padding: 8px 14px 8px 14px;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
+  margin-bottom: 6px;
   font-size: 14px;
+  margin-bottom: 0px;
 }
 
-.lang_info {
+.lang_info-box {
   font-family: "Roboto", sans-serif;
   background-color: #607080;
   padding: 8px 14px 8px 14px;
@@ -266,22 +267,22 @@ progress[value]::-webkit-progress-value {
 }
 
 .characteristics_info {
+  font-family: "Roboto", sans-serif;
   background-color: #607080;
   padding: 8px 14px 8px 14px;
   margin-bottom: 6px;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
   font-size: 14px;
+  text-align: center;
 }
 
 .person_info {
-  background-color: #607080;
-  margin-bottom: 0px;
-  padding-bottom: 6px;
   font-family: "Roboto", sans-serif;
-  text-align: left;
-  font-size: 14px;
+  background-color: #607080;
   padding: 8px 14px 8px 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 .right-container {
