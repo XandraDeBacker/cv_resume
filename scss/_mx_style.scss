@@ -1,0 +1,25 @@
+@import'variables.scss';
+
+
+@mixin style-right-containers {
+  margin: auto;
+  display: block;
+  height: $mob_hight;
+}
+
+@mixin styling2 {
+  font-family: $myfont2;
+  text-align: left;
+  font-size: 14px;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
+  margin: 0;
+}
+
+@mixin p-style {
+  font-family: $myfont2;
+  background-color: $bgc_info;
+  padding: 8px 14px 8px 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
