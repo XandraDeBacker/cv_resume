@@ -284,6 +284,12 @@ $mob_b_style: solid;
         font-size: 3vw;
     }
 
+    .container_img {
+        top: 100px;
+        left: 180px;
+    }
+
+   
     .right-container {
 
         margin-top: -210px;
@@ -296,7 +302,7 @@ $mob_b_style: solid;
 @media only screen and (min-width: 1580px) {
     .container_img {
         top: 100px;
-        left: 160px;
+        left: 180px;
     }
 
     .triangle_left {
